@@ -1,0 +1,107 @@
+Enter total number of process : 5
+Enter maximum number of pages per process : 8
+Enter total number of frames in main memory : 3
+Enter size of tlb : 3
+Pages allocated to each process : 7 7 6 3 5 
+Frames allocated to each process : 1 1 1 0 1 
+Frame Range allocated to each process : 1 1 1 0 1 
+Process Number : 1
+Reference string : 1 3 6 1 5 3 1 3 4 6 3 6 5 3 6 5 
+Process 1:for page reference 1, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1:for page reference 3, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1:for page reference 6, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1:for page reference 1, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1:for page reference 5, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1:for page reference 3, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1:for page reference 1, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1:for page reference 3, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1:for page reference 4, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1:for page reference 6, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1:for page reference 3, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1:for page reference 6, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1:for page reference 5, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1:for page reference 3, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1:for page reference 6, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1:for page reference 5, TLB miss->page table invalid->handing page fault.... ->frames alloted = 1
+Process 1 finished
+Number of page faults : 16
+Process Number : 4
+Reference string : 0 1 4 2 3 1 0 4 0 2 0 0 3 1 4 2 
+Process 4:for page reference 0, TLB miss->page table invalid->handing page fault.... ->frames alloted = 3
+Process 4:for page reference 1, TLB miss->page table invalid->handing page fault.... ->frames alloted = 3
+Process 4:for page reference 4, TLB miss->page table invalid->handing page fault.... ->frames alloted = 3
+Process 4:for page reference 2, TLB miss->page table invalid->handing page fault.... ->frames alloted = 3
+Process 4:for page reference 3, TLB miss->page table invalid->handing page fault.... ->frames alloted = 3
+Process 4:for page reference 1, TLB miss->page table invalid->handing page fault.... ->frames alloted = 3
+Process 4:for page reference 0, TLB miss->page table invalid->handing page fault.... ->frames alloted = 3
+Process 4:for page reference 4, TLB miss->page table invalid->handing page fault.... ->frames alloted = 3
+Process 4:for page reference 0, TLB miss->page table invalid->handing page fault.... ->frames alloted = 3
+Process 4:for page reference 2, TLB miss->page table invalid->handing page fault.... ->frames alloted = 3
+Process 4:for page reference 0, TLB miss->page table invalid->handing page fault.... ->frames alloted = 3
+Process 4:for page reference 0, TLB hit with frame no.3
+Process 4:for page reference 3, TLB miss->page table invalid->handing page fault.... ->frames alloted = 3
+Process 4:for page reference 1, TLB miss->page table invalid->handing page fault.... ->frames alloted = 3
+Process 4:for page reference 4, TLB miss->page table invalid->handing page fault.... ->frames alloted = 3
+Process 4:for page reference 2, TLB miss->page table invalid->handing page fault.... ->frames alloted = 3
+Process 4 finished
+Number of page faults : 15
+Process Number : 2
+Reference string : 1 0 1 0 2 0 3 3 2 2 5 1 2 5 4 1 
+Process 2:for page reference 1, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 0, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 1, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 0, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 2, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 0, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 3, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 3, TLB hit with frame no.2
+Process 2:for page reference 2, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 2, TLB hit with frame no.2
+Process 2:for page reference 5, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 1, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 2, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 5, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 4, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 1, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2 finished
+Number of page faults : 14
+Process Number : 0
+Reference string : 4 4 4 6 0 4 1 5 2 5 4 3 6 5 1 6 
+Process 0:for page reference 4, TLB miss->page table invalid->handing page fault.... ->frames alloted = 0
+Process 0:for page reference 4, TLB hit with frame no.0
+Process 0:for page reference 4, TLB hit with frame no.0
+Process 0:for page reference 6, TLB miss->page table invalid->handing page fault.... ->frames alloted = 0
+Process 0:for page reference 0, TLB miss->page table invalid->handing page fault.... ->frames alloted = 0
+Process 0:for page reference 4, TLB miss->page table invalid->handing page fault.... ->frames alloted = 0
+Process 0:for page reference 1, TLB miss->page table invalid->handing page fault.... ->frames alloted = 0
+Process 0:for page reference 5, TLB miss->page table invalid->handing page fault.... ->frames alloted = 0
+Process 0:for page reference 2, TLB miss->page table invalid->handing page fault.... ->frames alloted = 0
+Process 0:for page reference 5, TLB miss->page table invalid->handing page fault.... ->frames alloted = 0
+Process 0:for page reference 4, TLB miss->page table invalid->handing page fault.... ->frames alloted = 0
+Process 0:for page reference 3, TLB miss->page table invalid->handing page fault.... ->frames alloted = 0
+Process 0:for page reference 6, TLB miss->page table invalid->handing page fault.... ->frames alloted = 0
+Process 0:for page reference 5, TLB miss->page table invalid->handing page fault.... ->frames alloted = 0
+Process 0:for page reference 1, TLB miss->page table invalid->handing page fault.... ->frames alloted = 0
+Process 0:for page reference 6, TLB miss->page table invalid->handing page fault.... ->frames alloted = 0
+Process 0 finished
+Number of page faults : 14
+Process Number : 2
+Reference string : 3 2 5 4 5 5 0 4 0 2 1 2 4 1 0 2 
+Process 2:for page reference 3, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 2, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 5, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 4, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 5, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 5, TLB hit with frame no.2
+Process 2:for page reference 0, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 4, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 0, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 2, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 1, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 2, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 4, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 1, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 0, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2:for page reference 2, TLB miss->page table invalid->handing page fault.... ->frames alloted = 2
+Process 2 finished
+No of page faults : 15
